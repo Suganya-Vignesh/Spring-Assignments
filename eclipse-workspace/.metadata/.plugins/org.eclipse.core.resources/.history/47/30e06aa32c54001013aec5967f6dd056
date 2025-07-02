@@ -1,0 +1,19 @@
+package com.shristi.cons;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		//create the IOCContainer
+		ApplicationContext context = new  AnnotationConfigApplicationContext("com.shristi");
+		
+		Student student1 = (Student) context.getBean("student");
+		System.out.println(student1);
+		
+		
+	}
+
+}

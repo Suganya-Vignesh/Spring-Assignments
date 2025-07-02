@@ -1,0 +1,10 @@
+package com.shristi.figures;
+
+public class Square implements Shape {
+
+	@Override
+	public void area(int length, int breadth) {
+		System.out.println("Square"+length*breadth);
+	}
+
+}

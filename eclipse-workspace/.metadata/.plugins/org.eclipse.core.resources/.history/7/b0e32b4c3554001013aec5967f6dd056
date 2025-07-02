@@ -1,0 +1,17 @@
+package com.shristi.figures;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+
+public class ShapeMain {
+
+	public static void main(String[] args) {
+		//create the IOCContainer
+		ApplicationContext context = new  AnnotationConfigApplicationContext("com.shristi.figures");
+		
+		ShapeFactory shapeFactory = (ShapeFactory) context.getBean("shapefactory",ShapeFactory.class);
+		shapeFactory.printArea(null, 0, 0);
+	}
+
+}

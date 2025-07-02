@@ -1,0 +1,5 @@
+package com.sugan.autowire;
+
+public class CourseFactory {
+
+}

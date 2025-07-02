@@ -1,0 +1,11 @@
+package com.sugan.autowire;
+
+@Component
+public class Backend implements Icourse {
+
+	@Override
+	public void showCourses() {
+		System.out.println("Backend");
+	}
+
+}

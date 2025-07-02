@@ -1,0 +1,11 @@
+package com.sugan.autowire;
+
+public class Frontend implements Icourse {
+
+	@Override
+	public void showCourses() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

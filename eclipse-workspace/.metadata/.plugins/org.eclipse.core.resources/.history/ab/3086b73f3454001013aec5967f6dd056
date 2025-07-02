@@ -1,0 +1,8 @@
+package com.shristi.figures;
+
+public class Snippet {
+	public static void main(String[] args) {
+		"Invalid choice"
+	}
+}
+

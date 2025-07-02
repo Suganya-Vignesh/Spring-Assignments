@@ -1,0 +1,37 @@
+package com.sugan.constr;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+	private String studentName;
+	private Department department;
+	
+	//No Default constructor
+	//add a parameterized constructor only with dependencies
+	//do not add primitive types in constructor
+	//no need of @Autowired annotation
+	//no need of setter method for department
+	
+	public Student(Department department) {
+		super();
+		this.department = department;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [studentName=" + studentName + ", department=" + department + "]";
+	}
+
+
+	public String getStudentName() {
+		return studentName;
+	}
+	
+	@Value("Suganya")
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+}

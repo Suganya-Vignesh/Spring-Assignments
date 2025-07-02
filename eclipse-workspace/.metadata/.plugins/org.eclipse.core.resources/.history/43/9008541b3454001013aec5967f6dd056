@@ -1,0 +1,39 @@
+package com.shristi.figures;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ShapeFactory {
+	@Autowired
+	@Qualifier("square")
+	private Shape sshape;
+	
+	private Shape rectangle;
+	
+	private Shape tshape;
+	
+	
+	
+	public ShapeFactory(@Qualifier("triangle")Shape tshape) {
+		super();
+		this.tshape = tshape;
+	}
+
+
+
+	void printArea(String choice,int x, int y) {
+		switch(choice) {
+		case "s":
+			sshape.area(x, y);
+			break;
+		case "r":
+			rectangle.area(x,y);
+			break;
+		case "t":
+			tshape.area(x,y);
+			break;
+		}
+	}
+}

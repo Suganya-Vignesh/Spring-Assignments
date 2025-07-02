@@ -1,0 +1,11 @@
+package com.shristi.cons;
+
+public class Student {
+	private String studentName;
+	private int studentId;
+	private String city;
+	private Department department;
+	
+	
+
+}

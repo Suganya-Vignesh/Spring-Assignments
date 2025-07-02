@@ -1,0 +1,13 @@
+package com.sugan.autowire;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+@Component
+public class CourseFactory {
+	@Autowired
+	Icourse course;
+	
+	void printCourses() {
+		course.showCourses();
+	}
+}

@@ -1,0 +1,10 @@
+package com.sugan.autowire;
+
+public class Frontend implements Icourse {
+
+	@Override
+	public void showCourses() {
+		System.out.println("FrontEnd");
+	}
+
+}

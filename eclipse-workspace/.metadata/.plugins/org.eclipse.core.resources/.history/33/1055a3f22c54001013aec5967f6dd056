@@ -1,0 +1,5 @@
+package com.shristi.figures;
+
+public interface Shape {
+
+}
